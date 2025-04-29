@@ -7,29 +7,29 @@ This project provides an analytical platform for tracking and predicting stock t
 
 Here are a few images showing the look of the app:
 
-### Interface Overview
-![Interface Overview](picturesOfTheProject/image.png)
+### 🏠 Home Page
+![Home Page](picturesOfTheProject/image.png)
 
-### Feature 1
-![Feature 1](picturesOfTheProject/image1.png)
+### 📊 Analysis Page
+![Analysis Page](picturesOfTheProject/image1.png)
 
-### Feature 2
-![Feature 2](picturesOfTheProject/image2.png)
+### 📈 Technical Analysis (Full Strategy)
+![Technical Analysis - Full Strategy](picturesOfTheProject/image2.png)
 
-### Feature 3
-![Feature 3](picturesOfTheProject/image3.png)
+### 📉 Technical Analysis (RSI Strategy)
+![Technical Analysis - RSI Strategy](picturesOfTheProject/image3.png)
 
-### Feature 4
-![Feature 4](picturesOfTheProject/image4.png)
+### 📉 Technical Analysis (MACD Strategy)
+![Technical Analysis - MACD Strategy](picturesOfTheProject/image4.png)
 
-### Feature 5
-![Feature 5](picturesOfTheProject/image5.png)
+### 📉 Technical Analysis (ADX Strategy)
+![Technical Analysis - ADX Strategy](picturesOfTheProject/image5.png)
 
-### Feature 6
-![Feature 6](picturesOfTheProject/image6.png)
+### 📉 Technical Analysis (CCI Strategy)
+![Technical Analysis - CCI Strategy](picturesOfTheProject/image6.png)
 
-### Feature 7
-![Feature 7](picturesOfTheProject/image7.png)
+### 🤖 Stock Price Prediction
+![Stock Price Prediction](picturesOfTheProject/image7.png)
 
 ## Installation & Running the Project
 1. Clone the repository:
