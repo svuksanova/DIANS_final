@@ -37,7 +37,7 @@ def train_lstm(df):
 
     # Helper function to create sequences
     def create_sequences(data, sequence_length=50):
-        if len(data) <= sequence_length:
+        if len(data) <= sequence_length:  # Ensure enough data
             return np.empty((0, sequence_length, 1)), np.empty((0,))
 
         X, y = [], []
@@ -46,10 +46,11 @@ def train_lstm(df):
             y.append(data[i + sequence_length])
         X = np.array(X)
         y = np.array(y)
+        # Reshape X to (batch_size, time_steps, features)
         X = X.reshape((X.shape[0], X.shape[1], 1))
         return X, y
 
-    sequence_length = 50
+    sequence_length = 50  # Lookback window
     X_train, y_train = create_sequences(train_data, sequence_length)
     X_val, y_val = create_sequences(val_data, sequence_length)
 
@@ -71,7 +72,7 @@ def train_lstm(df):
     early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
     # Train the model
-    if X_val.size > 0 and y_val.size > 0:
+    if X_val.size > 0 and y_val.size > 0:  # If we have validation data
         model.fit(
             X_train, y_train,
             validation_data=(X_val, y_val),
